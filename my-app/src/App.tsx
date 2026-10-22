@@ -2,6 +2,7 @@ import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
+import { HiOutlineLightBulb } from "react-icons/hi";
 import './App.css'
 
 function App() {
@@ -19,6 +20,12 @@ function App() {
           <p>
             Senhor Cientista dos codigos
           </p>
+          <p> 
+               Pensamentos inteligentes 
+          </p>
+          <p>
+          {count > 0 ?< HiOutlineLightBulb/> : null} {count > 0 ? count : null} {count > 0 ?< HiOutlineLightBulb/> : null}
+          </p>
         </div>
       
         <button
@@ -26,7 +33,7 @@ function App() {
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
-          Pensamentos inteligentes ({count})
+          Tem algum alguma ideia?
         </button>
       </section>
 
